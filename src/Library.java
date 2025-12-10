@@ -16,16 +16,11 @@ public class Library {
         //TODO: Give the array allBooks a size of 10
 
         //TODO: Fill the array allBooks with reviews with random ratings from 0 to 10 inclusive
-        allBooks[0] = new Book(0);
-        allBooks[1] = new Book(1);
-        allBooks[2] = new Book(2);
-        allBooks[3] = new Book(3);
-        allBooks[4] = new Book(4);
-        allBooks[5] = new Book(5);
-        allBooks[6] = new Book(6);
-        allBooks[7] = new Book(7);
-        allBooks[8] = new Book(8);
-        allBooks[9] = new Book(9);
+
+        for(int i = 0; i<10; i++){
+            double rand = Math.random()*10;
+            allBooks[i] = new Book((int) (Math.random() * 10));
+        }
 
         //TODO: print all the ratings in the array allBooks
         for(int i = 0; i<allBooks.length; i++){
